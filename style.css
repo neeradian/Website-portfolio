@@ -106,12 +106,37 @@ nav li:first-child {
 
 /* -----------------Main Section---------------- */
 
-/* main{
+main .container{
   min-width:100%;
-  border: 2px solid red;
-} */
+  min-height: 90vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
 
-/* -------------------About Section------------------ */
+.container h1{
+  font-size: 3em;
+  color: red;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container h2{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container p{
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------About Section------------------
 
 #about{
   min-width:100%;
@@ -120,7 +145,7 @@ nav li:first-child {
 }
 
 
-/* -------------------Projects Section------------------ */
+-------------------Projects Section------------------
 
 #projects{
   min-width:100%;
@@ -129,10 +154,10 @@ nav li:first-child {
 }
 
 
-/* -------------------Contact Section------------------ */
+-------------------Contact Section------------------
 
 #contact{
   min-width:100%;
   min-height: 99vh;
   border: 2px solid red;
-}
+} */
