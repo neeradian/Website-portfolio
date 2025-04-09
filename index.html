@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <title>Nimesh Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <header class="nav bg-dark text-white p-1 align-items-center">
-      <img
-        src="img/2.jpeg"
-        alt="Logo"
-        class="rounded-circle"
-        width="50px"
-        height="50px"
-      />
-      <h4 class="px-3">Nimesh's Portfolio</h4>
-      <a href="#" class="">Home</a>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <img src="close-btn.svg" />
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="nav-title"><a href="#">Nimesh's Portfolio</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <img src="menu-btn.svg"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-    </header>
+    <main>
 
-    <!-- Bootstrap Javascript -->
-    <script src="bootstrap.bundle.min.js"></script>
+    </main>
+
+    <section class="About" id="about">
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          I am a passionate web developer with a knack for creating dynamic and
+          responsive websites. I love coding and enjoy learning new technologies.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h1>My Projects</h1>
+        <p>
+          Here are some of the projects I have worked on:
+        </p>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h1>Contact Me</h1>
+        <p>If you would like to get in touch, please reach out!</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
