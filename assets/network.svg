@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient></defs>
+<rect width="1200" height="700" fill="#070b14"/>
+<g stroke="url(#g)" stroke-width="2" opacity=".45">
+<path d="M90 120L320 260L520 120L760 280L1060 130"/><path d="M120 520L330 390L560 540L780 400L1090 530"/>
+<path d="M320 260L330 390M520 120L560 540M760 280L780 400M90 120L120 520M1060 130L1090 530"/>
+</g>
+<g fill="#dbeafe" stroke="#38bdf8" stroke-width="4">
+<circle cx="90" cy="120" r="15"/><circle cx="320" cy="260" r="15"/><circle cx="520" cy="120" r="15"/>
+<circle cx="760" cy="280" r="15"/><circle cx="1060" cy="130" r="15"/><circle cx="120" cy="520" r="15"/>
+<circle cx="330" cy="390" r="15"/><circle cx="560" cy="540" r="15"/><circle cx="780" cy="400" r="15"/><circle cx="1090" cy="530" r="15"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#94a3b8" font-size="22">
+<text x="60" y="85">CLIENT</text><text x="280" y="225">ROUTER</text><text x="485" y="85">LINUX</text>
+<text x="720" y="245">SERVER</text><text x="1010" y="95">CLOUD</text>
+</g>
+</svg>

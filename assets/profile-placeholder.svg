@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#13243a"/>
+  </linearGradient>
+  <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/>
+  </linearGradient>
+</defs>
+<rect width="800" height="800" rx="120" fill="url(#bg)"/>
+<circle cx="610" cy="150" r="110" fill="#38bdf8" opacity=".10"/>
+<circle cx="160" cy="680" r="150" fill="#818cf8" opacity=".09"/>
+<circle cx="400" cy="300" r="145" fill="#f2c7a5"/>
+<path d="M255 285c20-105 105-160 190-140 73 17 111 70 107 145-39-45-86-68-151-68-54 0-103 22-146 63z" fill="#171923"/>
+<circle cx="345" cy="310" r="12" fill="#172033"/><circle cx="455" cy="310" r="12" fill="#172033"/>
+<path d="M355 380c28 22 62 22 90 0" fill="none" stroke="#7b3f35" stroke-width="10" stroke-linecap="round"/>
+<path d="M250 570c36-92 104-137 150-137s114 45 150 137l-35 150H285z" fill="url(#shirt)"/>
+<path d="M360 455l40 58 40-58" fill="none" stroke="#dbeafe" stroke-width="10" opacity=".85"/>
+<text x="400" y="735" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="26" letter-spacing="4">CYBER • NETWORK • CODE</text>
+</svg>
