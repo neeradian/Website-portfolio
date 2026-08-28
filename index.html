@@ -1,82 +1,435 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal portfolio of Nimesh Kumar Mandal, a BTech CSE student interested in cybersecurity and networking."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Nimesh Kumar Mandal — CSE Student | Cybersecurity & Networking -->
+    <title>Nimesh Kumar Mandal</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
+
   <body>
-    <nav>
-      <ul class="sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#">
-            <img src="close-btn.svg" />
+    <div class="noise"></div>
+
+    <!-- Header -->
+    <header class="nav">
+      <!-- Logo -->
+      <a class="brand" href="#home">
+        <span>NK</span>
+        Nimesh Kumar Mandal
+      </a>
+
+      <button class="menu" aria-label="Toggle menu">☰</button>
+      <!-- Navigation -->
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+      <!-- Home Section -->
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <!-- <p class="eyebrow">4TH YEAR BE-CSE STUDENT</p> -->
+
+          <!-- Hero Heading -->
+          <h1>
+            Building with code.<br />
+            <em>Thinking like a defender.</em>
+          </h1>
+
+          <!-- Lead Text -->
+          <p class="lead">
+            Cybersecurity and networking enthusiast focused on learning how
+            systems work, how applications are built, and how they can be made
+            more secure.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="actions">
+            <a class="btn primary" href="#projects">
+              View my work <span>↗</span>
+            </a>
+            <a class="btn ghost" href="assets/Nimesh-Kr-Mandal-CV.pdf" download>
+              Download CV <span>↓</span>
+            </a>
+          </div>
+
+          <!-- Mini Stats -->
+          <div class="mini-stats">
+            <div>
+              <strong>8.12(upto 6th sem)</strong>
+              <span>Current CGPA</span>
+            </div>
+
+            <div>
+              <strong>2023-2027</strong>
+              <span>BE CSE</span>
+            </div>
+
+            <div>
+              <strong>3+</strong>
+              <span>Featured projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <!-- <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div> -->
+
+          <!-- Hero Art -->
+          <div class="profile-frame">
+            <img
+              src="assets/pp.jpeg"
+              alt="Stylized profile illustration placeholder for Nimesh Kumar Mandal"
+            />
+          </div>
+
+          <!-- Terminal Card -->
+          <div class="terminal-card">
+            <div>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <code>
+              $ whoami
+              <br />
+              <span>nimesh@linux:~$</span>
+              secure_the_future
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section   -->
+      <section id="about" class="section split">
+        <!-- About Left -->
+        <div>
+          <p class="eyebrow">01 / ABOUT</p>
+
+          <h2>
+            Curious about the systems
+            <span>behind the screen.</span>
+          </h2>
+        </div>
+
+        <!-- About Right -->
+        <div class="prose">
+          <p>
+            I'm Nimesh Kumar Mandal, a Final Year BE CSE Student at Excel
+            Engineering College, Tamil Nadu. I'm interested in cybersecurity and
+            networking, with a growing hands-on foundation across programming,
+            Linux, Web Development, and Computer Networking.
+          </p>
+
+          <p>
+            I enjoy turning ideas into practical applications while continuously
+            exploring the technologies and concepts that make modern systems
+            work.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <!-- Skills Head -->
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 / SKILLS</p>
+
+            <h2>
+              Tools in my
+              <span>toolbox.</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Skill Grid -->
+        <div class="skill-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card">
+            <b>01</b>
+            <h3>Python</h3>
+            <p>Programming & automation</p>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-card">
+            <b>02</b>
+            <h3>Java</h3>
+            <p>Application development</p>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-card">
+            <b>03</b>
+            <h3>Linux</h3>
+            <p>Systems & command line</p>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-card">
+            <b>04</b>
+            <h3>HTML</h3>
+            <p>Web structure</p>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-card">
+            <b>05</b>
+            <h3>Git & GitHub</h3>
+            <p>Version control</p>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-card">
+            <b>06</b>
+            <h3>Django</h3>
+            <p>Web application framework</p>
+          </div>
+
+          <!-- Skill 7 -->
+          <div class="skill-card wide">
+            <b>07</b>
+            <h3>Computer Networking</h3>
+            <p>Networking fundamentals & infrastructure concepts</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <!-- Projects Head -->
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / PROJECTS</p>
+            <h2>Things I've <span>built.</span></h2>
+          </div>
+
+          <!-- Network Art -->
+          <div class="network-art">
+            <img
+              src="assets/network.svg"
+              alt="Abstract computer network illustration"
+            />
+          </div>
+        </div>
+
+        <!-- Projects Container -->
+        <div class="projects">
+          <!-- Project 1 - To Do App -->
+          <article class="project-card">
+            <div class="project-no">01</div>
+            <h3>To-Do App</h3>
+            <p>
+              A web-based To-Do List application using Django that allows users
+              to efficiently manage their daily tasks.
+            </p>
+            <div class="tags">
+              <span>Django</span>
+              <span>Python</span>
+              <span>HTML</span>
+              <span>MySQL</span>
+              <span>Web</span>
+            </div>
+          </article>
+
+          <!-- Project 2 - Library Management System -->
+          <article class="project-card">
+            <div class="project-no">02</div>
+            <h3>Library Management System</h3>
+            <p>
+              Specialized software designed to automate and streamline the daily
+              operations of a library.
+            </p>
+            <div class="tags">
+              <span>LMS</span>
+              <span>Python</span>
+              <span>Django</span>
+              <span>Bootstrap</span>
+              <span>MySQL</span>
+              <span>HTML</span>
+            </div>
+          </article>
+
+          <!-- Project 3 - FleetTrack Manager -->
+          <article class="project-card featured">
+            <div class="project-no">03</div>
+            <h3>FleetTrack Manager</h3>
+            <p>
+              A Vehicle Management System designed to track, manage, and
+              optimize fleet vehicles and their associated operations.
+            </p>
+            <div class="tags">
+              <span>VMS</span>
+              <span>Django</span>
+              <span>Management</span>
+              <span>HTML</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <!-- Education Head -->
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / EDUCATION</p>
+            <h2>The journey <span>so far.</span></h2>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="timeline">
+          <!-- Education Item 1 - Under Graduate -->
+          <div class="edu">
+            <span>2023-2027</span>
+            <div>
+              <h3>B.E.- Computer Science and Engineering</h3>
+              <p>Excel Engineering College,</p>
+              <p>Komarapalayam, Tamil Nadu, India</p>
+              <strong>8.12 CGPA (upto 6th Semester)</strong>
+            </div>
+          </div>
+
+          <!-- Education Item 2 - Higher Secondary -->
+          <div class="edu">
+            <span>2022</span>
+            <div>
+              <h3>12th</h3>
+              <p>Shikshadeep Boarding Secondary School</p>
+              <p>Biratnagar, Morang, Nepal</p>
+              <strong>72.75%</strong>
+            </div>
+          </div>
+
+          <!-- Education Item 3 - Secondary -->
+          <div class="edu">
+            <span>2020</span>
+            <div>
+              <h3>10th</h3>
+              <p>Namuna Vidya Mandir Secondary Boarding School</p>
+              <p>Biratnagar, Morang, Nepal</p>
+              <strong>93%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <!-- Contact Head -->
+        <div>
+          <p class="eyebrow">05 / CONTACT</p>
+
+          <h2>Let's connect.</h2>
+
+          <p class="lead">
+            Have an opportunity, project idea, or just want to talk tech? Reach
+            out.
+          </p>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="contact-card">
+          <a class="email" href="mailto:mail@nimeshmandal.com.np">
+            mail@nimeshmandal.com.np
           </a>
-        </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul>
-        <li class="nav-title"><a href="#">Nimesh's Portfolio</a></li>
-        <li class="hideOnMobile"><a href="#">Home</a></li>
-        <li class="hideOnMobile"><a href="#about">About</a></li>
-        <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-        <li class="menu-button" onclick="showSidebar()">
-          <a href="#"> <img src="menu-btn.svg" /></a>
-        </li>
-      </ul>
-    </nav>
 
-    <main>
-      <div class="container">
-        <h1>ERROR 404</h1>
-        <h2>Page Not Found</h2>
-        <p>This website is under development</p>
-      </div>
+          <!-- <a
+            class="email"
+            href="https://mail.google.com/mail/?view=cm&to=mail@nimeshmandal.com.np"
+            target="_blank"
+            rel="noopener"
+          >
+            mail@nimeshmandal.com.np
+          </a> 
+          -->
+
+          <!-- Social Links -->
+          <div class="socials">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/neeradian"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/neeradian"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook ↗
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/neeradian"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram ↗
+            </a>
+
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com/_Neeradian"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Twitter ↗
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/neeradian"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Main End -->
 
-    <!-- <section class="About" id="about">
-      <div class="about-content">
-        <h1>About Me</h1>
-        <p>
-          I am a passionate web developer with a knack for creating dynamic and
-          responsive websites. I love coding and enjoy learning new
-          technologies.
-        </p>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer>
+      <!-- <span>© 2026 Nimesh Kumar Mandal</span> -->
+      <span
+        >&copy; <span id="currentYear">(2026)</span> Nimesh Kumar Mandal</span
+      >
 
-    <section class="projects" id="projects">
-      <div class="projects-content">
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I have worked on:</p>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-content">
-        <h1>Contact Me</h1>
-        <p>If you would like to get in touch, please reach out!</p>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section> -->
+      <span>Cybersecurity • Networking • Development</span>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
